@@ -1,3 +1,74 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*Variaveis */
+
+/*-- cores -- */
+:root {
+    --purple-primary: #3D113A;
+    --purple-secundary: #A32D9B;
+
+    --green-primary: #79963D;
+
+    --gray-green: #191F0D;
+}
+
+
+/*------------------------------*/
+
+html {
+    font-family: "Lato", sans-serif;
+}
+
+/*Estilo dos Textos*/
+
+/*-- Titulos --*/
+.title-1 {
+    @apply text-[34px] font-black text-black;
+}
+
+.title-2 {
+    @apply text-[38px] font-extrabold text-black; 
+}
+
+/*Subtitulos*/
+.subtitle-1 {
+    @apply text-base text-white font-semibold
+}
+
+/*-- Textos -- */
+.text-1 {
+    @apply text-[20px] text-black;
+}
+
+.text-2 {
+    @apply text-base font-semibold text-black;
+}
+
+.text-3 {
+    @apply font-semibold text-[16px];
+    color: var(--purple-primary);
+}
+
+.text-4{
+    @apply text-white w-[92%];
+}
+
+.span-1 {
+    @apply text-[70px] font-extrabold text-white
+}
+
+/*-------------------------------------------------------*/
+
+/*Estilo dos Botões*/
+
+.btn-1, .btn-login {
+    @apply py-[16px] px-[28px] text-white shadow-sm;
+    border-radius: 12px;
+    background-color: var(--purple-primary);
+}
+
+.btn-login {
+    @apply uppercase font-black
+}

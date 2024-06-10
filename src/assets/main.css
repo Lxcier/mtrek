@@ -1,1 +1,28 @@
 @import './base.css';
+
+.body {
+    @apply bg-white;
+}
+
+.container {
+    @apply max-w-[1280px] w-full mx-auto px-[30px];
+}
+
+.section {
+    @apply mt-[48px] mb-[100px] mx-auto;
+}
+
+.section__title {
+    @apply mx-auto text-center max-w-[45%] mb-[2rem]; 
+}
+
+/*Cards*/
+
+.cards__list {
+    @apply flex items-center;
+}
+
+.card {
+    @apply px-[38px] py-[28px] pt-[28px] shadow-lg;
+    border-radius: 50px;
+}
