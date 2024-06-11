@@ -4,6 +4,10 @@
     import Estatisticas from '../components/Estatisticas.vue'
     import WhyToUse from '../components/WhyToUse.vue'
     import Parceiras from '../components/Parceiras.vue'
+    import Economia from '../components/Economia.vue'
+    import HowItWorks from '../components/HowItWorks.vue'
+    import Motivos from '../components/Motivos.vue'
+    import Depoimentos from '../components/Depoimentos.vue'
 
     export default {
         name: "HomeView",
@@ -12,7 +16,11 @@
             Beneficios,
             Estatisticas,
             WhyToUse,
-            Parceiras
+            Parceiras,
+            Economia,
+            HowItWorks,
+            Motivos,
+            Depoimentos
         }
     }
 </script>
@@ -21,12 +29,22 @@
     <div class="container">
         <MainSlider/>
     </div>
+
         <Beneficios/>
+
     <div class="container">
         <Estatisticas/>
         <WhyToUse/>
         <Parceiras/>
+        <Economia/>
     </div> 
+
+    <HowItWorks/>
+
+    <div class="container">
+        <Motivos/>
+        <Depoimentos/>
+    </div>
 
 </template>
 

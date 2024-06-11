@@ -81,7 +81,8 @@
 	}
 
 	.card {
-		@apply px-[18px];
+		@apply px-[18px] h-[255px];
+		align-content: center;
 		background: var(--green-primary);
 	} 
 

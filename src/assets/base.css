@@ -32,6 +32,10 @@ html {
     @apply text-[38px] font-extrabold text-black; 
 }
 
+.title-3 {
+    @apply text-[20px] font-black text-black;
+}
+
 /*Subtitulos*/
 .subtitle-1 {
     @apply text-base text-white font-semibold
@@ -44,6 +48,10 @@ html {
 
 .text-2 {
     @apply text-base font-semibold text-black;
+}
+
+.text-2-normal {
+     @apply text-base text-black;
 }
 
 .text-3 {

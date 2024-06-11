@@ -11,7 +11,7 @@
                     id="logo"
                     class="logo">
 
-            <h3 id="slogan" class="text-1">Cashback em Tudo. Três Vezes Melhor!</h3>
+            <h3 id="slogan" class="text-1">Consumo Inteligente, Futuro Sustentável!</h3>
 
             <nav class="navbar">
                 <a  href="#"
