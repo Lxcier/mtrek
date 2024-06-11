@@ -69,6 +69,10 @@ html {
     background-color: var(--purple-primary);
 }
 
+.btn-1 {
+    @apply font-bold
+}
+
 .btn-login {
     @apply uppercase font-black
 }
