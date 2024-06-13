@@ -8,6 +8,9 @@
     import HowItWorks from '../components/HowItWorks.vue'
     import Motivos from '../components/Motivos.vue'
     import Depoimentos from '../components/Depoimentos.vue'
+    import Sustentabilidade from '../components/SustentabilidadeMtrek.vue'
+    import Contato from '../components/Contato.vue'
+    import FAQ from '../components/FAQ.vue'
 
     export default {
         name: "HomeView",
@@ -20,7 +23,10 @@
             Economia,
             HowItWorks,
             Motivos,
-            Depoimentos
+            Depoimentos,
+            Sustentabilidade,
+            Contato,
+            FAQ,
         }
     }
 </script>
@@ -44,6 +50,13 @@
     <div class="container">
         <Motivos/>
         <Depoimentos/>
+    </div>
+
+        <Sustentabilidade/>
+
+    <div class="container">
+        <Contato/>
+        <FAQ/>
     </div>
 
 </template>

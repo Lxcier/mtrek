@@ -9,7 +9,7 @@
 }
 
 .section {
-    @apply mt-[48px] mb-[100px] mx-auto;
+    @apply mt-[48px] mb-[38px] mx-auto;
 }
 
 .section__title {

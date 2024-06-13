@@ -28,6 +28,10 @@ html {
     @apply text-[34px] font-black text-black;
 }
 
+.title-1-big {
+    @apply text-[60px] font-black text-black
+}
+
 .title-2 {
     @apply text-[38px] font-extrabold text-black; 
 }
@@ -52,6 +56,10 @@ html {
 
 .text-2-normal {
      @apply text-base text-black;
+}
+
+.text-2-small {
+    @apply text-sm;
 }
 
 .text-3 {
