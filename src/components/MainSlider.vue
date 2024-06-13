@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
     import Glide from '@glidejs/glide'
 
     // Imagens 
