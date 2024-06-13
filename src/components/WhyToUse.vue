@@ -1,5 +1,5 @@
 <script>
-	export default {
+	export default {,
 		name: "WhyToUse"
 	}
 </script>
@@ -8,7 +8,7 @@
 	<main class="section">
 		<section class="section__content">
 			<article class="why-to-use">
-				<img class="why-to-use__image" src="../assets/images/planeta.png">
+				<img class="why-to-use__image" src="../assets/images/Planeta.png">
 				<div class="text">
 					<h2 class="title-1 mb-[56px]">
 						Transforme sua Energia em Sustentabilidade com a Mtrek

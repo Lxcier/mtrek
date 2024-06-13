@@ -45,8 +45,9 @@
             startAt: 0,
             perView: 1,
             autoplay: 3000,
+            animation: "fade",
             animationDuration: 500,
-            animationTimingFunc: 'ease',
+            animationTimingFunc: 'ease-in-out',
             }).mount();
         }
     }

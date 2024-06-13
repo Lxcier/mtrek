@@ -60,7 +60,11 @@ html {
 }
 
 .text-4{
-    @apply text-white w-[92%];
+    @apply text-white;
+}
+
+.text-4-small {
+    @apply text-sm text-white;
 }
 
 .span-1 {

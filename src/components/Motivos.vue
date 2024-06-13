@@ -11,17 +11,17 @@
 			<ul class="reasons">
 				<div class="side-a">
 					<li class="reason">
-						<img src="#" alt="icone de check" class="check">
+						<img src="../assets/images/Icones/check.png" alt="icone de check" class="check">
 							<p class="text-1">Energia limpa e sustentável</p>
 						</img>
 					</li>
 					<li class="reason">
-						<img src="#" alt="#" class="check">
+						<img src="../assets/images/Icones/check.png" alt="icone de check" class="check">
 							<p class="text-1">Redução no valor da sua conta de luz</p>
 						</img>
 					</li>
 					<li class="reason">
-						<img src="#" alt="#" class="check">
+						<img src="../assets/images/Icones/check.png" alt="icone de check" class="check">
 							<p class="text-1">Sem investimento inicial</p>
 						</img>
 					</li>
@@ -29,17 +29,17 @@
 
 				<div class="side-b">
 					<li class="reason">
-						<img src="#" alt="#" class="check">
+						<img src="../assets/images/Icones/check.png" alt="icone de check" class="check">
 							<p class="text-1">Sem obras no local de consumo</p>
 						</img>
 					</li>
 					<li class="reason">
-						<img src="" alt="" class="check">
+						<img src="../assets/images/Icones/check.png" alt="icone de check" class="check">
 							<p class="text-1">Contratação simples e 100% digital</p>
 						</img>
 					</li>
 					<li class="reason">
-						<img src="#" alt="#" class="check">
+						<img src="../assets/images/Icones/check.png" alt="icone de check" class="check">
 							<p class="text-1">Sem fidelidade de contrato</p>
 						</img>
 					</li>
@@ -56,5 +56,9 @@
 
 	.reason {
 		@apply flex gap-1
+	}
+
+	.check {
+		@apply w-[32px] h-[32px]
 	}
 </style>
