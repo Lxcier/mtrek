@@ -11,3 +11,18 @@ const app = createApp(App)
 app.use(router)
 
 app.mount('#app')
+
+const accordionBtns = document.querySelectorAll('.accordion');
+
+accordionBtns.forEach(accordion => {
+  accordion.addEventListener('click', function() {
+    this.classList.toggle('is-open');
+
+    const content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = `${content.scrollHeight}px`;
+    }
+  });
+});

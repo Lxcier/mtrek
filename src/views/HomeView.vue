@@ -12,6 +12,7 @@
     import Contato from '../components/Contato.vue'
     import FAQ from '../components/FAQ.vue'
 
+     import Iframe from '../components/Iframe.vue'
     export default {
         name: "HomeView",
         components: {
@@ -27,6 +28,7 @@
             Sustentabilidade,
             Contato,
             FAQ,
+            Iframe,
         }
     }
 </script>
@@ -39,6 +41,7 @@
         <Beneficios/>
 
     <div class="container">
+        <Iframe/>
         <Estatisticas/>
         <WhyToUse/>
         <Parceiras/>
