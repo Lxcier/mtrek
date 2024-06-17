@@ -12,11 +12,14 @@
     import Contato from '../components/Contato.vue'
     import FAQ from '../components/FAQ.vue'
 
-     import Iframe from '../components/Iframe.vue'
+    import Iframe from '../components/Iframe.vue'
+    import Calculadora from '../components/Calculadora.vue'
+
     export default {
         name: "HomeView",
         components: {
             MainSlider,
+            Calculadora,
             Beneficios,
             Estatisticas,
             WhyToUse,
@@ -34,36 +37,32 @@
 </script>
 
 <template>
-    <div class="container">
-        <MainSlider/>
-    </div>
+  <div class="container">
+    <MainSlider data-aos="fade-up" />
+    <Calculadora data-aos="fade-up" data-aos-delay="300" />
+  </div>
 
-        <Beneficios/>
+  <Beneficios/>
 
-    <div class="container">
-        <Iframe/>
-        <Estatisticas/>
-        <WhyToUse/>
-        <Parceiras/>
-        <Economia/>
-    </div> 
+  <div class="container">
+    <Iframe data-aos="zoom-in" />
+    <Estatisticas data-aos="fade-up" data-aos-delay="200" />
+    <WhyToUse data-aos="fade-up" data-aos-delay="300" />
+    <Parceiras data-aos="fade-up" data-aos-delay="400" />
+    <Economia data-aos="fade-up" data-aos-delay="500" />
+  </div>
 
-    <HowItWorks/>
+  <HowItWorks data-aos="fade-left" />
 
-    <div class="container">
-        <Motivos/>
-        <Depoimentos/>
-    </div>
+  <div class="container">
+    <Motivos data-aos="fade-right" />
+    <Depoimentos data-aos="fade-left" data-aos-delay="100" />
+  </div>
 
-        <Sustentabilidade/>
+  <Sustentabilidade data-aos="fade-up" />
 
-    <div class="container">
-        <Contato/>
-        <FAQ/>
-    </div>
-
+  <div class="container">
+    <Contato data-aos="fade-right" />
+    <FAQ data-aos="fade-left" data-aos-delay="300" />
+  </div>
 </template>
-
-<style scoped>
-
-</style>

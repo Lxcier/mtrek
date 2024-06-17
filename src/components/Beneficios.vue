@@ -14,7 +14,7 @@
 
 		<section class="section__content">
 			<ul class="cards__list container">
-				<li class="card">
+				<li class="card" data-aos="fade-right">
 					<h3 class="title-2 card__title">
 						Economia Financeira
 					</h3>
@@ -27,9 +27,9 @@
 					</a>
 				</li>
 
-				<img class="arrow" src="../assets/images/Icones/seta.png">
+				<img class="arrow" src="../assets/images/Icones/seta.png" data-aos="fade-right" data-aos-delay="100">
 
-				<li class="card">
+				<li class="card" data-aos="fade-right" data-aos-delay="200">
 					<h3 class="title-2 card__title">
 						Sem Obras
 					</h3>
@@ -42,9 +42,9 @@
 					</a>
 				</li>
 
-				<img class="arrow" src="../assets/images/Icones/seta.png">
+				<img class="arrow" src="../assets/images/Icones/seta.png" data-aos="fade-right" data-aos-delay="200">
 
-				<li class="card">
+				<li class="card" data-aos="fade-right" data-aos-delay="300">
 					<h3 class="title-2 card__title">
 						Ganhe Cashback
 					</h3>

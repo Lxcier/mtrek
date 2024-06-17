@@ -6,11 +6,17 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const app = createApp(App)
 
 app.use(router)
 
-app.mount('#app')
+app.mount('#app') 
+  .$nextTick(() => {
+  AOS.init(); 
+});
 
 const accordionBtns = document.querySelectorAll('.accordion');
 

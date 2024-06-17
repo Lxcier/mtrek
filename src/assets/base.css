@@ -32,6 +32,10 @@ html {
     @apply text-[60px] font-black text-black
 }
 
+.title-1-white{
+    @apply text-[34px] font-black text-white
+}
+
 .title-2 {
     @apply text-[38px] font-extrabold text-black; 
 }
@@ -84,8 +88,11 @@ html {
 /*Estilo dos Botões*/
 
 .btn-1, .btn-login {
-    @apply py-[16px] px-[28px] text-white shadow-sm;
+    @apply py-[12px] px-[24px] text-white shadow-sm 
+    hover:bg-transparent hover:text-[var(--purple-primary)]
+    transition-all duration-300 ease-in-out cursor-pointer;
     border-radius: 12px;
+    border: 2px solid var(--purple-primary);
     background-color: var(--purple-primary);
 }
 
