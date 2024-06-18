@@ -59,7 +59,7 @@
 
         <ul class="glide__slides">
           <li class="glide__slide" v-for="image in slider.images" :key="image.id">
-              <img :src="image.url" :alt="image.titulo"
+              <img :src="image.url" :alt="image.titulo">
           </li>
         </ul>
 
@@ -93,6 +93,7 @@
 
     .glide__arrow {
         @apply absolute top-1/2;
+        transform: translateY(-50%);
     }
 
     .glide__arrow--left {
@@ -117,6 +118,4 @@
     .glide__bullet--active {
         @apply bg-black
     }
-
-
 </style>

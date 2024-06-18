@@ -70,7 +70,7 @@ export default {
 
 <style scoped>
 .section {
-  @apply flex mt-24 w-[80%];
+  @apply flex mt-20 w-[80%];
 }
 
 .section__calculadora {

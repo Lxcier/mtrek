@@ -8,13 +8,21 @@
 	<main class="section">
 		<section class="section__content">
 			<article class="why-to-use">
-				<img class="why-to-use__image" src="../assets/images/Planeta.png">
+				<img class="why-to-use__image" src="../assets/images/Planeta.png"
+				data-aos="fade-left"
+				data-aos-delay="450"
+				data-aos-duration="1000">
 				<div class="text">
-					<h2 class="title-1 mb-[56px]">
+					<h2 class="title-1 mb-[56px]"
+						data-aos="fade-up"
+						data-aos-duration="400">
 						Transforme sua Energia em Sustentabilidade com a Mtrek
 					</h2>
 
-					<p class="paragraph text-1">
+					<p class="paragraph text-1"
+						data-aos="fade-up"
+						data-aos-duration="400" 
+						data-aos-delay="100">
 						Você já parou para pensar no impacto da poluição ambiental em nossas vidas e no futuro do nosso planeta? A emissão excessiva de gases de efeito estufa, resultado das práticas tradicionais de geração de energia, está contribuindo diretamente para o aquecimento global e para as mudanças climáticas que testemunhamos todos os dias.
 					</p>
 				</div>
@@ -22,15 +30,24 @@
 
 			<article class="why-to-use">
 				<div class="text">
-					<p class="paragraph text-1">
+					<p class="paragraph text-1"
+						data-aos="fade-up" 
+						data-aos-delay="100"
+						data-aos-duration="400">
 						A boa notícia é que você pode fazer a diferença! Com o Mercado Livre de Energia da Mtrek, você tem a oportunidade de adotar uma abordagem mais sustentável em relação ao seu consumo de energia. Ao se cadastrar em nossa plataforma, você está dando um passo significativo em direção a um futuro mais limpo e saudável para todos.
 					</p>
 				</div>
 
-				<img class="why-to-use__image" src="../assets/images/Sustentabilidade.png">
+				<img class="why-to-use__image" src="../assets/images/Sustentabilidade.png"
+					data-aos="fade-right" 
+					data-aos-delay="450"
+					data-aos-duration="1000">
 			</article>
 
-			<a class="btn-1" href="#">Fazer Cadastro</a>
+			<a 	class="btn-1" href="#"
+				data-aos="fade-up" 
+				data-aos-delay="200"
+				data-aos-duration="400">Fazer Cadastro</a>
 		</section>
 	</main>
 </template>

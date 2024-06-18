@@ -6,16 +6,24 @@
 
 <template>
 	<main class="section">
-		<h2 class="section__title title-1">
+		<h2 class="section__title title-1"
+			data-aos="fade-up"
+			data-aos-duration="600">
 			Faça a Mudança, Faça a Diferença!
 		</h2>
-		<p class="paragraph text-1">
+		<p 	class="paragraph text-1" 
+			data-aos="fade-up" 
+			data-aos-delay="100"
+			data-aos-duration="600">
 			Ao optar pela energia limpa da Mtrek, você não está apenas economizando dinheiro; você está ajudando a construir um futuro mais sustentável para todos. Cada escolha que você faz contribui para a redução da poluição e para a preservação do meio ambiente.
 		</p>
 
 		<section class="section__content">
 			<ul class="cards__list">
-				<li class="card w-[410px]">
+				<li class="card w-[410px]"
+					data-aos="fade-up" 
+					data-aos-delay="200"
+					data-aos-duration="400">
 					<p class="text-4">
 						Economize todos os meses na sua conta de luz em até:
 					</p>
@@ -27,7 +35,9 @@
 					</p>
 				</li>
 
-				<li class="card w-[513px]">
+				<li class="card w-[513px]"
+					data-aos="fade-up" data-aos-delay="300"
+					data-aos-duration="400">
 					<p class="text-4">
 						Em meses de bandeira tarifária vermelha II seu desconto pode chegar em até:
 					</p>
@@ -39,7 +49,9 @@
 					</p>
 				</li>
 
-				<li class="card w-[378px]">
+				<li class="card w-[378px]"
+					data-aos="fade-up" data-aos-delay="400"
+					data-aos-duration="400">
 					<p class="text-4">
 						Você contribui positivamente com o meio ambiente
 					</p>
@@ -51,7 +63,9 @@
 					</p>
 				</li>
 
-				<li class="card w-[378px]">
+				<li class="card w-[378px]"
+					data-aos="fade-up" data-aos-delay="500"
+					data-aos-duration="400">
 					<p class="text-4">
 						Consumir energia da Mtrek, é o equivalente a plantar
 					</p>
@@ -64,7 +78,9 @@
 				</li>
 			</ul>
 
-			<a class="btn-1" href="#">
+			<a 	class="btn-1" href="#"
+				data-aos="fade-up"
+				data-aos-duration="500">
 				Quero Economizar e Salvar o Planeta
 			</a>
 		</section>

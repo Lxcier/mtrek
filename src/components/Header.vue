@@ -7,16 +7,18 @@
 <template>
     <div class="container">
         <header class="header">
-            <img    src="../assets/images/Logos/LOGO-MERCADO-DE-ENERGIA- H. PRETO.png"
-                    id="logo"
-                    class="logo">
+            <a href="/" class="logo">
+                <img    
+                    src="../assets/images/Logos/LOGO-MERCADO-DE-ENERGIA- H. PRETO.png"
+                    id="logo">
+            </a>
 
             <h3 id="slogan" class="text-1">Consumo Inteligente, Futuro Sustentável!</h3>
 
             <nav class="navbar">
                 <a  href="#"
                     id="sign-in"
-                    class="text-2">
+                    class="btn-signin">
                     cadastrar                
                 </a>
 
@@ -40,12 +42,11 @@
     }
 
     .navbar {
-        @apply flex items-center gap-8;
+        @apply flex items-center gap-[10px];
     }
 
-    .navbar > #sign-in {
-        @apply text-[20px] uppercase font-black;
+    .navbar > .btn-signin {
+        @apply text-[16px] uppercase font-black;
         color: var(--gray-green);
     }
-
 </style>

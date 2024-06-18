@@ -39,15 +39,29 @@
 	<main class="section">
 		<section class="section__content">
 			<article class="section__text">
-					<small class="text-1">
-					<img src="../assets/images/Icones/pessoa.png" alt="#" class="icon-1">
-					Depoimentos</small>
-					<h2 class="section__title title-1">Quem Já se Cadastrou na Mtrek, aprova o resultado!</h2>
-					<p class=" paragraph text-1">Nós da Mtrek prezamos por você, cliente! Confira alguns depoimentos de pessoas que compraram conosco e receberam seus Cashbacks.</p>
+					<small class="text-1"
+							data-aos="fade-left" 
+							data-aos-duration="600">
+						<img src="../assets/images/Icones/pessoa.png" alt="#" class="icon-1">
+						Depoimentos
+					</small>
+					<h2 class="section__title title-1"
+						data-aos="fade-left"
+						data-aos-delay="100"
+						data-aos-duration="600">
+						Quem Já se Cadastrou na Mtrek, aprova o resultado!
+					</h2>
+					<p class=" paragraph text-1"
+						data-aos="fade-left"
+						data-aos-delay="150"
+						data-aos-duration="600">
+						Nós da Mtrek prezamos por você, cliente! Confira alguns depoimentos de pessoas que compraram conosco e receberam seus Cashbacks.
+					</p>
 				</img>
 			</article>
 
-			<article class="testimonials__glide">
+			<article class="testimonials__glide"
+				data-aos="fade-left">
 				<div class="testimonials__glide__track" data-glide-el="track">
 					<ul class="testimonials__glide__slides">
 						<li class="testimonials__glide__slide" v-for="testimonial in testimonials.testimonial" >
@@ -97,23 +111,23 @@
 
 <style scoped>
 	.section__content {
-		@apply flex items-center justify-center gap-[80px]
+		@apply flex items-center justify-center gap-[80px];
 	}
 
 	.section__text {
-		@apply w-[40%]
+		@apply w-[40%];
 	}
 
 	.section__text small {
-		@apply flex items-center gap-1
+		@apply flex items-center gap-1;
 	}
 
 	.section__text small .icon-1 {
-		@apply w-[22px] h-[22px]
+		@apply w-[22px] h-[22px];
 	}
 
 	.section__title {
-		@apply max-w-full text-start mt-[16px] mx-0
+		@apply max-w-full text-start mt-[16px] mx-0;
 	}
 
 	.testimonials__glide {

@@ -7,20 +7,33 @@
 <template>
 	<main class="section">
 		<section class="section__content">
-			<h2 class="section__title title-1">Motivos para fazer parte da Mtrek!</h2>
+			<h2 class="section__title title-1"
+				data-aos="fade-right"
+				data-aos-duration="800">
+				Motivos para fazer parte da Mtrek!
+			</h2>
 			<ul class="reasons">
 				<div class="side-a">
-					<li class="reason">
+					<li class="reason"
+						data-aos="fade-right"
+						data-aos-delay="100"
+						data-aos-duration="800">
 						<img src="../assets/images/Icones/check.png" alt="icone de check" class="check">
 							<p class="text-1">Energia limpa e sustentável</p>
 						</img>
 					</li>
-					<li class="reason">
+					<li class="reason"
+						data-aos="fade-right"
+						data-aos-delay="150"
+						data-aos-duration="800">
 						<img src="../assets/images/Icones/check.png" alt="icone de check" class="check">
 							<p class="text-1">Redução no valor da sua conta de luz</p>
 						</img>
 					</li>
-					<li class="reason">
+					<li class="reason"
+						data-aos="fade-right"
+						data-aos-delay="200"
+						data-aos-duration="800">
 						<img src="../assets/images/Icones/check.png" alt="icone de check" class="check">
 							<p class="text-1">Sem investimento inicial</p>
 						</img>
@@ -28,17 +41,28 @@
 				</div>
 
 				<div class="side-b">
-					<li class="reason">
+					<li class="reason"
+						data-aos="fade-right"
+						data-aos-delay="250"
+						data-aos-duration="800">
 						<img src="../assets/images/Icones/check.png" alt="icone de check" class="check">
 							<p class="text-1">Sem obras no local de consumo</p>
 						</img>
 					</li>
-					<li class="reason">
+
+					<li class="reason"
+						data-aos="fade-right"
+						data-aos-delay="300"
+						data-aos-duration="800">
 						<img src="../assets/images/Icones/check.png" alt="icone de check" class="check">
 							<p class="text-1">Contratação simples e 100% digital</p>
 						</img>
 					</li>
-					<li class="reason">
+
+					<li class="reason"
+						data-aos="fade-right"
+						data-aos-delay="350"
+						data-aos-duration="800">
 						<img src="../assets/images/Icones/check.png" alt="icone de check" class="check">
 							<p class="text-1">Sem fidelidade de contrato</p>
 						</img>

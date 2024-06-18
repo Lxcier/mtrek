@@ -7,12 +7,16 @@
 <template>
 	<main class="section">
 		<section class="section__content container">
-			<h2 class="section__title title-1">
+			<h2 class="section__title title-1"
+			data-aos="fade-left"
+			data-aos-duration="800">
 				Saiba como a Mtrek faz para gerar economia em sua conta de luz
 			</h2>
 
 			<ul class="cards__list">
-				<li class="card">
+				<li class="card"
+				data-aos="fade-left"
+				data-aos-duration="800">
 					<img class="card__image" src="../assets/images/Distribuidoras.png">
 
 					<h3 class="card__title title-3">
@@ -24,7 +28,10 @@
 					</p>
 				</li>
 
-				<li class="card">
+				<li class="card"
+				data-aos="fade-left"
+				data-aos-duration="800"
+				data-aos-delay="100">
 					<img class="card__image" src="../assets/images/creditos-em-energia-limpa.png">
 
 					<h3 class="card__title title-3">
@@ -36,7 +43,10 @@
 					</p>
 				</li>
 
-				<li class="card">
+				<li class="card"
+				data-aos="fade-left"
+				data-aos-duration="800"
+				data-aos-delay="200">
 					<img class="card__image" src="../assets/images/economia-na-conta.png">
 
 					<h3 class="card__title title-3">
@@ -48,7 +58,10 @@
 					</p>
 				</li>
 
-				<li class="card">
+				<li class="card"
+				data-aos="fade-left"
+				data-aos-duration="800"
+				data-aos-delay="300">
 					<img class="card__image" src="../assets/images/cobrança-simples-e-digital.png">
 
 					<h3 class="card__title title-3">

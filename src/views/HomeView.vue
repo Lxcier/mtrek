@@ -39,24 +39,30 @@
 <template>
   <div class="container">
     <MainSlider data-aos="fade-up" />
-    <Calculadora data-aos="fade-up" data-aos-delay="300" />
+    <Calculadora 
+      data-aos="zoom-in" 
+      data-aos-delay="100"
+      data-aos-duration="600" />
   </div>
 
   <Beneficios/>
 
   <div class="container">
-    <Iframe data-aos="zoom-in" />
-    <Estatisticas data-aos="fade-up" data-aos-delay="200" />
-    <WhyToUse data-aos="fade-up" data-aos-delay="300" />
-    <Parceiras data-aos="fade-up" data-aos-delay="400" />
-    <Economia data-aos="fade-up" data-aos-delay="500" />
+    <Iframe 
+      data-aos="zoom-in"
+      data-aos-delay="100"
+      data-aos-duration="600" />
+    <Estatisticas />
+    <WhyToUse />
+    <Parceiras data-aos="fade-up" data-aos-delay="100"/>
+    <Economia />
   </div>
 
-  <HowItWorks data-aos="fade-left" />
+  <HowItWorks />
 
   <div class="container">
-    <Motivos data-aos="fade-right" />
-    <Depoimentos data-aos="fade-left" data-aos-delay="100" />
+    <Motivos />
+    <Depoimentos />
   </div>
 
   <Sustentabilidade data-aos="fade-up" />

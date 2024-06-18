@@ -87,7 +87,9 @@ html {
 
 /*Estilo dos Botões*/
 
-.btn-1, .btn-login {
+.btn-1, 
+.btn-login, 
+.btn-signin {
     @apply py-[12px] px-[24px] text-white shadow-sm 
     hover:bg-transparent hover:text-[var(--purple-primary)]
     transition-all duration-300 ease-in-out cursor-pointer;
@@ -102,4 +104,14 @@ html {
 
 .btn-login {
     @apply uppercase font-black
+}
+
+.btn-signin {
+    @apply bg-transparent shadow-none;
+    border: 2px solid transparent;
+}
+
+.btn-signin:hover {
+    border: 2px solid var(--purple-primary);
+    color: var(--purple-primary);
 }
