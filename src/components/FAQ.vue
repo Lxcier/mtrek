@@ -1,6 +1,7 @@
 <template>
   <section class="section">
-    <section class="section__content">
+    <section class="section__content"
+      data-aos="fade-up" data-aos-duration="1000">
       <h2 class="section__title title-1">Perguntas Frequentes</h2>
       <p class="text-2-normal">
         Está com alguma dúvida? Confira nosso FAQ ou entre em contato conosco.

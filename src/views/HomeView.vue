@@ -51,24 +51,25 @@
     <Iframe 
       data-aos="zoom-in"
       data-aos-delay="100"
-      data-aos-duration="600" />
+      data-aos-duration="600"
+      data-aos-anchor-placement="top-center" />
     <Estatisticas />
     <WhyToUse />
     <Parceiras data-aos="fade-up" data-aos-delay="100"/>
-    <Economia />
+    <Economia class="overflow-hidden"/>
   </div>
 
-  <HowItWorks />
+  <HowItWorks class="overflow-x-hidden"/>
 
-  <div class="container">
+  <div class="container overflow-x-hidden" >
     <Motivos />
     <Depoimentos />
   </div>
 
-  <Sustentabilidade data-aos="fade-up" />
+  <Sustentabilidade />
 
   <div class="container">
-    <Contato data-aos="fade-right" />
-    <FAQ data-aos="fade-left" data-aos-delay="300" />
+    <Contato />
+    <FAQ />
   </div>
 </template>

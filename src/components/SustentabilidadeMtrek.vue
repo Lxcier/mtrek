@@ -7,24 +7,38 @@
 <template>
 	<main class="section mx-auto">
 		<section class="section__content container">
-			<img class="section__image" src="../assets/images/sustentabilidade-mtrek.png">
+			<img class="section__image" src="../assets/images/sustentabilidade-mtrek.png"
+				data-aos="fade-right" 
+					data-aos-delay="50"
+					data-aos-duration="1000">
 			<div class="section__text">
-				<h2 class="section__title title-1">
+				<h2 class="section__title title-1"
+					data-aos="fade-up"
+					data-aos-duration="400">
 					A Mtrek acredita em um mundo sustentável, onde toda energia é renovável e inteligente
 				</h2>
 
-				<p class="paragraph text-1">
+				<p class="paragraph text-1"
+					data-aos="fade-up"
+					data-aos-duration="400"
+					data-aos-delay="100">
 					Para fazer nossa parte, temos a missão de tornar energia renovável acessível. A Mtrek endereça esse desafio viabilizando a oferta de energia para residências, simplificando a experiência do cliente e entregando uma solução confiável, inovadora, econômica e <span class="font-black">RENDA EXTRA</span>.
 				</p>
 
 				<div class="dados">
-					<div class="usinas">
+					<div class="usinas"
+						data-aos="fade-up"
+						data-aos-duration="400"
+						data-aos-delay="125">
 						<h3 class="title-1-big">+100</h3>
 						<small>
 							usinas de geração de energia renovável
 						</small>
 					</div>
-					<div class="cidades">
+					<div class="cidades"
+						data-aos="fade-up"
+						data-aos-duration="400"
+						data-aos-delay="125">
 						<h3 class="title-1-big">+2mil</h3>
 						<small>
 							cidades atendidas nos Estados de São Paulo, Rio de Janeiro e Minas Gerais e outros.
@@ -35,7 +49,10 @@
 		</section>
 
 		<section class="section__banner">
-			<img src="../assets/images/BANNER-DE-EBULIÇÃO-GLOBAL.webp">
+			<img src="../assets/images/BANNER-DE-EBULIÇÃO-GLOBAL.webp"
+				data-aos="zoom-in-down"
+							data-aos-duration="1000"
+							data-aos-delay="125">
 		</section>
 	</main>
 </template>

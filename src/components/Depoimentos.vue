@@ -61,7 +61,8 @@
 			</article>
 
 			<article class="testimonials__glide"
-				data-aos="fade-left">
+				data-aos="fade-left"
+				>
 				<div class="testimonials__glide__track" data-glide-el="track">
 					<ul class="testimonials__glide__slides">
 						<li class="testimonials__glide__slide" v-for="testimonial in testimonials.testimonial" >
@@ -110,6 +111,10 @@
 </template>
 
 <style scoped>
+	.section {
+		height: calc(100% + 1rem + 0.7rem);
+	}
+
 	.section__content {
 		@apply flex items-center justify-center gap-[80px];
 	}

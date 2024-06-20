@@ -1,7 +1,12 @@
 @import './base.css';
 
+html {
+    scroll-behavior: smooth;
+}
+
 .body {
     @apply bg-white;
+    overflow-x: hidden;
 }
 
 .container {
