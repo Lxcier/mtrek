@@ -54,7 +54,7 @@ export default {
   },
   methods: {
     getImageUrl(image) {
-      return window.innerWidth <= 768 ? image.urlMobile : image.urlDesktop;
+      return window.innerWidth <= 1023 ? image.urlMobile : image.urlDesktop;
     },
     handleResize() {
       this.$nextTick(() => {

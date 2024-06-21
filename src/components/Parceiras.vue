@@ -81,6 +81,12 @@
             autoplay: 3000,
             animationDuration: 500,
             animationTimingFunc: 'ease',
+            breakpoints: {
+                1023: {
+                    perView: 2,
+                }
+            }
+
             }).mount();
         }
     }
@@ -152,6 +158,16 @@
     .companies__arrow--right {
         right: 0;
         transform: translateY(-50%);
+    }
+
+    @media screen and (max-width: 1023px){
+        .section__title {
+            @apply max-w-[80%]
+        }
+
+        .paragraph {
+            @apply text-justify w-[92%];
+        }
     }
 </style>
 

@@ -12,5 +12,11 @@
     .video {
         @apply rounded-lg mx-auto;
     }
+
+    @media screen and (max-width: 1023px) {
+        .video {
+            @apply w-[98%] h-[420px];
+        }
+    }
 </style>
 

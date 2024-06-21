@@ -51,8 +51,7 @@
     <Iframe 
       data-aos="zoom-in"
       data-aos-delay="100"
-      data-aos-duration="600"
-      data-aos-anchor-placement="top-center" />
+      data-aos-duration="600"/>
     <Estatisticas />
     <WhyToUse />
     <Parceiras data-aos="fade-up" data-aos-delay="100"/>

@@ -72,4 +72,32 @@
 		@apply block w-max mt-[48px] mx-auto;
 	}
 
+	@media screen and (max-width: 1023px){
+		.why-to-use:nth-child(1) {
+			@apply flex-col-reverse;
+		}
+
+		.title-1 {
+			@apply max-w-[82%] text-center mx-auto;
+		}
+
+		.paragraph,
+		.paragraph:nth-child(1){
+			@apply w-[92%] mx-auto;
+		}
+
+		.why-to-use__image {
+			@apply w-[60%] my-3 mt-0;
+		}
+
+		.why-to-use:nth-child(2) {
+			@apply flex-col;
+		}
+
+		.btn-1 {
+			@apply text-[18px]
+		}
+	}
+
+
 </style>

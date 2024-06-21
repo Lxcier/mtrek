@@ -67,33 +67,51 @@
 </template>
 
 <style scoped>
-	.section__content {
-		@apply py-[32px];
+.section__content {
+	@apply py-[32px];
 
-		background: rgb(61,17,58);
-		background: -moz-linear-gradient(90deg, rgba(61,17,58,1) 0%, rgba(163,45,155,1) 100%);
-		background: -webkit-linear-gradient(90deg, rgba(61,17,58,1) 0%, rgba(163,45,155,1) 100%);
-		background: linear-gradient(90deg, rgba(61,17,58,1) 0%, rgba(163,45,155,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3d113a",endColorstr="#a32d9b",GradientType=1);
-	}
+	background: rgb(61,17,58);
+	background: -moz-linear-gradient(90deg, rgba(61,17,58,1) 0%, rgba(163,45,155,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(61,17,58,1) 0%, rgba(163,45,155,1) 100%);
+	background: linear-gradient(90deg, rgba(61,17,58,1) 0%, rgba(163,45,155,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3d113a",endColorstr="#a32d9b",GradientType=1);
+}
 
-	.arrow {
-		@apply w-[40px] h-[40px]
+.arrow {
+	@apply w-[40px] h-[40px]
+}
+
+.cards__list {
+	@apply gap-[26px];
+}
+
+.card {
+	@apply bg-white;
+}
+
+.card__title {
+	@apply mb-[18px] w-1/2;
+}
+
+.card__button {
+	@apply flex items-center gap-1 mt-[18px]
+}
+
+@media screen and (max-width: 1023px){
+	.section__title {
+		@apply max-w-[72%];
 	}
 
 	.cards__list {
-		@apply gap-[26px];
+		@apply flex flex-col;
 	}
 
 	.card {
-		@apply bg-white;
+		@apply max-w-[40%]
 	}
 
-	.card__title {
-		@apply mb-[18px] w-1/2;
+	img.arrow {
+		rotate: 90deg;
 	}
-
-	.card__button {
-		@apply flex items-center gap-1 mt-[18px]
-	}
+}
 </style>

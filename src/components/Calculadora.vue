@@ -143,4 +143,28 @@ export default {
   background: #C1EC68;
   border: 2px solid #C1EC68;
 }
+
+@media screen and (max-width: 1023px) {
+  .resultado {
+    @apply flex-col items-start gap-3 px-8;
+  }
+
+  .btn-1 {
+    @apply text-[14px]
+  }
+}
+
+@media screen and (max-width: 767px){
+  .section {
+    @apply flex-col;
+  }
+
+  .section__calculadora {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .section__resultado {
+    border-radius: 0 0 20px 20px;
+  }
+}
 </style>

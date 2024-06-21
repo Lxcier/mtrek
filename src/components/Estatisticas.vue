@@ -180,4 +180,26 @@ export default {
 .btn-1 {
   @apply block w-max mt-[48px] mx-auto;
 }
+
+@media screen and (max-width: 1023px) {
+  .section__title {
+    @apply max-w-[73%]
+  }
+
+  .paragraph {
+    @apply w-[92%] text-justify
+  }
+
+  .cards__list {
+    @apply flex-wrap justify-center;
+  }
+
+  .card {
+    @apply w-[40%] px-6 mx-0;
+  }
+
+  .btn-1 {
+    @apply text-[18px]
+  }
+}
 </style>
