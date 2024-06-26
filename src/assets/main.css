@@ -1,7 +1,7 @@
 @import './base.css';
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
 }
 
 .body {
@@ -30,4 +30,14 @@ html {
 .card {
     @apply px-[38px] py-[28px] pt-[28px] shadow-lg flex flex-col gap-2 justify-center;
     border-radius: 50px;
+}
+
+.animated,
+.animated-left,
+.animated-right,
+.section__title,
+.paragraph,
+.card,
+.arrow {
+    visibility: hidden;
 }
