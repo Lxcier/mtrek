@@ -1,5 +1,5 @@
 <template>
-  <main class="section">
+  <main class="section calculadora">
     <div class="section__calculadora">
       <h2 class="title-1-white mb-1">Calcule Sua Economia!</h2>
       <p class="text-4">Quanto você gasta de luz, em média, por mês?</p>
@@ -21,7 +21,7 @@
           v-model.number="gastoMensal"
         >
       </div>
-      <span class="block text-white text-5xl mt-[48px] font-bold">
+      <span class="gasto">
         R$ {{ gastoMensal.toFixed(2) }}
       </span>
     </div>
@@ -64,8 +64,8 @@ export default {
       const percentage = clickPosition / width;
       const newValue = Math.round((percentage * this.maxRange) / this.step) * this.step;
     },
-  },
-};
+  }
+  };
 </script>
 
 <style scoped>
@@ -126,6 +126,10 @@ export default {
   background-color: #455622; /* Cor de fundo da barra de progresso */
 }
 
+.gasto {
+  @apply block text-white text-5xl mt-[48px] font-bold;
+}
+
 .section__resultado {
   @apply flex-1 text-white p-8 flex flex-col gap-[18px];
   background: #455622;
@@ -151,6 +155,10 @@ export default {
 
   .btn-1 {
     @apply text-[14px]
+  }
+
+  .gasto {
+    @apply text-4xl;
   }
 }
 

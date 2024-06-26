@@ -1,4 +1,7 @@
-<script>
+<script>  
+    import sr from '../scrollReveal.js';
+
+
     import MainSlider from '../components/MainSlider.vue'
     import Beneficios from '../components/Beneficios.vue'
     import Estatisticas from '../components/Estatisticas.vue'
@@ -32,29 +35,57 @@
             Contato,
             FAQ,
             Iframe,
+        },
+        mounted() {
+          sr.reveal('.calculadora');
+          sr.reveal('.animated');
+
+          sr.reveal('.section__title', {
+            duration: 600,
+            scale: .8,
+            origin: 'bottom',
+          });
+
+          sr.reveal('.paragraph', {
+            delay: 200,
+          });
+
+          sr.reveal ('.animated-right', {
+            origin: 'right'
+          });
+
+          sr.reveal('.animated-left', {
+            origin: 'left'
+          });
+
+
+          // cards
+          sr.reveal('.card', {
+            interval: 200,
+            origin: 'left',
+          });
+
+          sr.reveal('.arrow', {
+            interval: 200,
+            origin: 'left',
+          });
         }
     }
 </script>
 
 <template>
   <div class="container">
-    <MainSlider data-aos="fade-up" />
-    <Calculadora 
-      data-aos="zoom-in" 
-      data-aos-delay="100"
-      data-aos-duration="600" />
+    <MainSlider />
+    <Calculadora />
   </div>
 
   <Beneficios/>
 
   <div class="container">
-    <Iframe 
-      data-aos="zoom-in"
-      data-aos-delay="100"
-      data-aos-duration="600"/>
+    <Iframe />
     <Estatisticas />
     <WhyToUse />
-    <Parceiras data-aos="fade-up" data-aos-delay="100"/>
+    <Parceiras />
     <Economia class="overflow-hidden"/>
   </div>
 

@@ -1,13 +1,12 @@
 <template>
   <section class="section">
-    <section class="section__content"
-      data-aos="fade-up" data-aos-duration="1000">
+    <section class="section__content">
       <h2 class="section__title title-1">Perguntas Frequentes</h2>
-      <p class="text-2-normal">
+      <p class="text-2-normal animated">
         Está com alguma dúvida? Confira nosso FAQ ou entre em contato conosco.
       </p>
 
-      <ul class="faq">
+      <ul class="faq animated">
         <li
           v-for="(item, index) in faqItems"
           :key="index"
@@ -160,5 +159,15 @@ export default {
 .fa-chevron-down.rotate-180 {
 	@apply text-black bg-white;
   	transform: rotate(180deg);
+}
+
+@media screen and (max-width: 1023px) {
+  .faq {
+    @apply w-full mx-auto;
+  }
+
+  .title-1{
+    @apply max-w-fit;
+  }
 }
 </style>

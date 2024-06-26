@@ -8,28 +8,21 @@
 	<main class="section">
 		<section class="section__content">
 			<article>
-				<h2 class="section__title title-1"
-				data-aos="fade-up"
-				data-aos-duration="400">
+				<h2 class="section__title title-1">
 					Com a Mtrek Você tem Economia Garantia na Sua Conta de Luz!
 				</h2>
 
-				<p class="paragraph text-1"
-				data-aos="fade-up" 
-				data-aos-delay="50"
-				data-aos-duration="400">
+				<p class="paragraph text-1">
 					A fatura, somada à sua conta de luz com os créditos injetados será sempre menor que sua conta de luz atual.
 				</p>
 
-				<a class="btn-1 block w-fit"
-				data-aos="fade-up" 
-				data-aos-delay="150"
-				data-aos-duration="400">Quero Economizar</a>
+				<a class="btn-1 block w-fit animated">Quero Economizar</a>
 			</article>
 
-			<article class="graphic"
-			data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
-				<img src="../assets/images/grafico.png">
+			<article class="graphic">
+				<img class="animated-left" src="../assets/images/grafico.png">
+
+				<a class="btn-1 mobile-btn block w-fit animated">Quero Economizar</a>
 			</article>
 		</section>
 	</main>
@@ -51,4 +44,31 @@
 	.graphic {
 		@apply w-[80%]
 	}
+
+	.mobile-btn {
+		@apply hidden;
+	}
+
+	@media screen and (max-width: 1023px){
+		.section__content {
+			@apply flex-col
+		}
+
+		.section__title {
+			@apply text-center
+		}
+
+		.paragraph {
+			@apply w-full mx-auto
+			}
+
+		.btn-1 {
+			@apply hidden
+		}
+
+		.btn-1.mobile-btn {
+			@apply block mx-auto mt-8 text-[18px];
+		}
+	}
+
 </style>

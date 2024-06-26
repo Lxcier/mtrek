@@ -1,23 +1,21 @@
-<script>
-	export default {
-		name: 'Beneficios'
-	}
+<script scoped>
+
+export default {
+	name: 'Beneficios',
+}
 </script>
 
 <template>
 	<main class="section">
 		<div class="container">
-			<h2 class="title-1 section__title"
-				data-aos="fade-right"
-				data-aos-duration="600">
+			<h2 class="title-1 section__title">
 				Benefícios exclusivos para os membros da Mtrek
 			</h2>
 		</div>
 
 		<section class="section__content">
 			<ul class="cards__list container">
-				<li class="card" data-aos="fade-right"
-				data-aos-duration="1000">
+				<li class="card">
 					<h3 class="title-2 card__title">
 						Economia Financeira
 					</h3>
@@ -30,10 +28,9 @@
 					</a>
 				</li>
 
-				<img class="arrow" src="../assets/images/Icones/seta.png" data-aos="fade-right" data-aos-duration="800" data-aos-delay="150">
+				<img class="arrow" src="../assets/images/Icones/seta.png">
 
-				<li class="card" data-aos="fade-right"
-				data-aos-duration="1000" data-aos-delay="200">
+				<li class="card">
 					<h3 class="title-2 card__title">
 						Sem Obras
 					</h3>
@@ -46,10 +43,9 @@
 					</a>
 				</li>
 
-				<img class="arrow" src="../assets/images/Icones/seta.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="250">
+				<img class="arrow" src="../assets/images/Icones/seta.png">
 
-				<li class="card" data-aos="fade-right"
-				data-aos-duration="1000" data-aos-delay="300">
+				<li class="card">
 					<h3 class="title-2 card__title">
 						Ganhe Cashback
 					</h3>

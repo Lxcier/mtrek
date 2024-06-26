@@ -1,14 +1,10 @@
 <template>
   <main class="section">
-    <h2 class="section__title title-1" data-aos="fade-up" data-aos-duration="600">
+    <h2 class="section__title title-1">
       Faça a Mudança, Faça a Diferença!
     </h2>
     <p
-      class="paragraph text-1"
-      data-aos="fade-up"
-      data-aos-delay="100"
-      data-aos-duration="600"
-    >
+      class="paragraph text-1">
       Ao optar pela energia limpa da Mtrek, você não está apenas economizando
       dinheiro; você está ajudando a construir um futuro mais sustentável para
       todos. Cada escolha que você faz contribui para a redução da poluição e
@@ -18,11 +14,7 @@
     <section class="section__content" ref="sectionContent">
       <ul class="cards__list">
         <li
-          class="card w-[410px]"
-          data-aos="fade-up"
-          data-aos-delay="200"
-          data-aos-duration="400"
-        >
+          class="card w-[410px]">
           <p class="text-4">
             Economize todos os meses na sua conta de luz em até:
           </p>
@@ -31,11 +23,7 @@
         </li>
 
         <li
-          class="card w-[513px]"
-          data-aos="fade-up"
-          data-aos-delay="300"
-          data-aos-duration="400"
-        >
+          class="card w-[513px]">
           <p class="text-4">
             Em meses de bandeira tarifária vermelha II seu desconto pode chegar
             em até:
@@ -45,11 +33,7 @@
         </li>
 
         <li
-          class="card w-[378px]"
-          data-aos="fade-up"
-          data-aos-delay="400"
-          data-aos-duration="400"
-        >
+          class="card w-[378px]">
           <p class="text-4">
             Você contribui positivamente com o meio ambiente
           </p>
@@ -58,11 +42,7 @@
         </li>
 
         <li
-          class="card w-[378px]"
-          data-aos="fade-up"
-          data-aos-delay="500"
-          data-aos-duration="400"
-        >
+          class="card w-[378px]">
           <p class="text-4">
             Consumir energia da Mtrek, é o equivalente a plantar
           </p>
@@ -72,11 +52,8 @@
       </ul>
 
       <a
-        class="btn-1"
-        href="#"
-        data-aos="fade-up"
-        data-aos-duration="500"
-      >
+        class="btn-1 animated"
+        href="#">
         Quero Economizar e Salvar o Planeta
       </a>
     </section>
@@ -92,71 +69,37 @@ export default {
       animatedNumber2: 0,
       animatedNumber3: 0,
       animatedNumber4: 0,
-      animationRunning: false, // Flag para controlar a animação
+      animationDone: false, // Flag para indicar se a animação já foi concluída
     };
   },
   mounted() {
-    this.aosObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            // Se a animação não estiver em andamento, inicia
-            if (!this.animationRunning) {
-              this.animateNumbers();
-            }
-          } else {
-            // Quando o elemento sai da viewport, reinicia a animação
-            this.resetAnimation();
-          }
-        });
-      },
-      { threshold: 0.2 } 
-    );
-
-    this.$nextTick(() => {
-      this.aosObserver.observe(this.$refs.sectionContent); 
-    });
-  },
-  beforeUnmount() {
-    if (this.aosObserver) {
-      this.aosObserver.disconnect();
+    if (!this.animationDone) { // Verifica se a animação já foi feita
+      this.animateNumbers();
     }
   },
   methods: {
     animateNumbers() {
-      this.animationRunning = true; // Sinaliza que a animação começou
       const targets = [25, 30, 140, 6]; 
-      const durations = [1000, 1200, 1500, 800]; 
+      const durations = [1000, 1200, 1500, 1500]; 
 
       targets.forEach((target, index) => {
         let startTimestamp = null;
 
         const step = (timestamp) => {
           if (!startTimestamp) startTimestamp = timestamp;
-          const progress = Math.min(
-            (timestamp - startTimestamp) / durations[index],
-            1
-          );
+          const progress = Math.min((timestamp - startTimestamp) / durations[index], 1);
           this[`animatedNumber${index + 1}`] = Math.floor(progress * target);
 
           if (progress < 1) {
             requestAnimationFrame(step);
           } else {
-            // Quando a animação termina, libera a flag
-            this.animationRunning = false;
+            // Define a flag como true quando a animação terminar
+            this.animationDone = true; 
           }
         };
 
         requestAnimationFrame(step);
       });
-    },
-    resetAnimation() {
-      // Reinicia os valores dos números e a flag de animação
-      this.animatedNumber1 = 0;
-      this.animatedNumber2 = 0;
-      this.animatedNumber3 = 0;
-      this.animatedNumber4 = 0;
-      this.animationRunning = false;
     },
   },
 };
@@ -187,7 +130,7 @@ export default {
   }
 
   .paragraph {
-    @apply w-[92%] text-justify
+    @apply w-full text-justify
   }
 
   .cards__list {
@@ -200,6 +143,10 @@ export default {
 
   .btn-1 {
     @apply text-[18px]
+  }
+
+  .span-1 {
+    @apply text-7xl;
   }
 }
 </style>

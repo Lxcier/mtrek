@@ -85,4 +85,13 @@
     .footer__right .text-4-small{
         @apply w-[80%]
     }
+
+    @media screen and (max-width: 1023px) {
+        .container {
+            @apply p-6;
+        }
+        .footer__logo {
+            @apply w-[168px];
+        }
+    }
 </style>

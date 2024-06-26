@@ -28,6 +28,6 @@ html {
 }
 
 .card {
-    @apply px-[38px] py-[28px] pt-[28px] shadow-lg;
+    @apply px-[38px] py-[28px] pt-[28px] shadow-lg flex flex-col gap-2 justify-center;
     border-radius: 50px;
 }

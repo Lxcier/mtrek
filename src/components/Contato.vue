@@ -7,28 +7,19 @@
 <template>
 	<main class="section">
 		<section class="section__content">
-			<h2 class="section__title title-1"
-				data-aos="fade-up"
-				data-aos-duration="400"
-				data-aos-delay="50">
+			<h2 class="section__title title-1">
 				Pronto para começar sua jornada rumo a uma vida mais verde e econômica? Inscreva-se hoje mesmo na Mtrek e comece a desfrutar dos benefícios da energia limpa!
 			</h2>
 
-			<h3 class="title-1 text-center"
-				data-aos="fade-up"
-				data-aos-duration="400"
-				data-aos-delay="100">
+			<h3 class="title-1 text-center animated">
 				Contate o Atendimento Mtrek
 			</h3>
-			<div class="buttons"
-				data-aos="fade-up"
-				data-aos-duration="500"
-				data-aos-delay="200">
-				<a class="btn-1" href="#">
+			<div class="buttons">
+				<a class="btn-1 animated" href="#">
 					Atendimento via WhatsApp
 				</a>
 
-				<a class="btn-1" href="#">
+				<a class="btn-1 animated" href="#">
 					Atendimento via E-mail
 				</a>
 

@@ -102,7 +102,7 @@
             </p>
         </section>
 
-        <div class="companies__glide">
+        <div class="companies__glide animated">
             <div class="companies__track" data-glide-el="track">
                 <ul class="companies__slides">
                     <li class="companies__slide" v-for="image in companies.images" 
@@ -142,12 +142,15 @@
     }
 
     .companies__slides {
-
         @apply flex gap-[20px] mx-auto;
     }
 
     .companies__arrow {
         @apply absolute top-[50%];
+    }
+    
+    .companies__arrow img {
+        @apply w-10;
     }
 
     .companies__arrow--left {
@@ -166,7 +169,7 @@
         }
 
         .paragraph {
-            @apply text-justify w-[92%];
+            @apply text-justify w-full;
         }
     }
 </style>
