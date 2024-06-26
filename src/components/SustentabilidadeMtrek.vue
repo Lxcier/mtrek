@@ -122,6 +122,19 @@
 		.section__image-mobile {
 			@apply block w-[60%] mx-auto;
 		}
-		
+	}
+
+	@media screen and (max-width: 767px) {
+		.section__title {
+			@apply max-w-[90%];
+		}
+
+		.paragraph {
+			@apply w-[80%]
+		}
+
+		.dados {
+			@apply w-[80%] mx-auto;
+		}
 	}
 </style>

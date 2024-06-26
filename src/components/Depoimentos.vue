@@ -208,4 +208,23 @@
 		}
     }
 
+	@media screen and (max-width: 767px) {
+		.section__title {
+			@apply max-w-full
+		}
+
+		.paragraph,
+		.paragraph:nth-child(1) {
+			@apply w-[90%]
+		}
+
+		.testimonials__glide__track {
+			@apply w-[80%] mx-auto;
+		}
+
+		.testimonials__glide__slide {
+			@apply px-6;
+		}
+	}
+
 </style>

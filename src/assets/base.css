@@ -115,3 +115,9 @@ html {
     border: 2px solid var(--purple-primary);
     color: var(--purple-primary);
 }
+
+@media screen and (max-width: 767px) {
+    .title-1 {
+        @apply text-[30px];
+    }
+}

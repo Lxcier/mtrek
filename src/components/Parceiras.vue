@@ -84,6 +84,9 @@
             breakpoints: {
                 1023: {
                     perView: 2,
+                },
+                767: {
+                    perView: 1,
                 }
             }
 
@@ -168,5 +171,16 @@
             @apply text-justify w-full;
         }
     }
+
+    @media screen and (max-width: 767px) {
+		.section__title {
+			@apply max-w-full
+		}
+
+		.paragraph,
+		.paragraph:nth-child(1) {
+			@apply w-[90%]
+		}
+	}
 </style>
 

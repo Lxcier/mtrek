@@ -113,4 +113,18 @@
 			@apply max-w-[80%];
 		}
 	}
+
+	@media screen and (max-width: 767px) {
+		.section__title {
+			@apply max-w-[90%]
+		}
+
+		.cards__list {
+			@apply flex-col;
+		}
+
+		.card {
+			@apply w-[90%]
+		}
+	}
 </style>

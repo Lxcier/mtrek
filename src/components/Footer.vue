@@ -4,7 +4,7 @@
             <img class="footer__logo" src="../assets/images/Logos/logo-cashback.png">
    
         <div class="footer__middle text-center">
-            <small class="text-4-small">Copyright 2024 &copy; Mtrek - Todos os Direitos Reservados</small>
+            <small class="text-4-small copy-desktop">Copyright 2024 &copy; Mtrek - Todos os Direitos Reservados</small>
             <p class="text-4">
                 Mtrek especializada em pagar Cashback 3x maior em todos os produtos e serviços que você e sua família consomem.
             </p>
@@ -35,10 +35,12 @@
                 </li>
             </ul>
 
-            <small class=" text-4-small">
+            <small class="pj text-4-small">
                 Estabelecida como pessoa Jurídica através do marco regulatório das Startups.
             </small>
+
         </div>
+        <small class="text-4-small copy-mobile text-center">Copyright 2024 &copy; Mtrek - Todos os Direitos Reservados</small>
         </div>
     </footer>
 </template>
@@ -86,12 +88,42 @@
         @apply w-[80%]
     }
 
+    .copy-mobile {
+        @apply hidden;
+    }
+
     @media screen and (max-width: 1023px) {
         .container {
             @apply p-6;
         }
         .footer__logo {
             @apply w-[168px];
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .container {
+            @apply flex-col px-2;
+        }
+
+        .copy-desktop {
+            @apply hidden;
+        }
+
+        .copy-mobile {
+            @apply block;
+        }
+
+        .footer__logo {
+            @apply w-[210px] mb-3;
+        }
+
+        .footer__right {
+            @apply flex-row my-4;
+        }
+
+        .footer__right .pj {
+            @apply w-1/2;
         }
     }
 </style>

@@ -44,4 +44,10 @@
 	.buttons .btn-1 {
 		@apply text-center
 	}
+
+	@media screen and (max-width: 767px) {
+		.section__title {
+			@apply max-w-[90%]
+		}
+	}
 </style>

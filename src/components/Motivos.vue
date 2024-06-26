@@ -65,4 +65,14 @@
 	.check {
 		@apply w-[32px] h-[32px]
 	}
+
+	@media screen and (max-width: 767px) {
+		.section__title {
+			@apply max-w-full;
+		}
+
+		.reasons {
+			@apply flex-col gap-0;
+		}
+	}
 </style>

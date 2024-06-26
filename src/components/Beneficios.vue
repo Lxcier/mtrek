@@ -110,4 +110,10 @@ export default {
 		rotate: 90deg;
 	}
 }
+
+@media screen and (max-width: 767px) {
+	.card {
+		@apply max-w-[90%]
+	}
+}
 </style>

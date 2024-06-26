@@ -41,3 +41,9 @@ html {
 .arrow {
     visibility: hidden;
 }
+
+@media screen and (max-width: 767px) {
+    .container {
+        @apply px-2;
+    }
+}

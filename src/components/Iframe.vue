@@ -18,5 +18,11 @@
             @apply w-[98%] h-[420px];
         }
     }
+
+    @media screen and (max-width: 767px) {
+        .video {
+            @apply h-[320px];
+        }
+    }
 </style>
 

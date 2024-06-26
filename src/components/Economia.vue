@@ -71,4 +71,18 @@
 		}
 	}
 
+	@media screen and (max-width: 767px) {
+		.section__title {
+			@apply max-w-full
+		}
+
+		.paragraph,
+		.paragraph:nth-child(1) {
+			@apply w-[90%]
+		}
+
+		.graphic {
+			@apply w-full;
+		}
+	}
 </style>

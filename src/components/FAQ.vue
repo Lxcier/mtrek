@@ -17,7 +17,7 @@
             :class="{ 'btn-accordion--active': item.isOpen }"
             @click="toggleAccordion(index)"
           >
-            <h5 class="text-2-small">{{ item.question }}</h5>
+            <h5 class="text-2-small accordion__question">{{ item.question }}</h5>
             <i
               class="fa-solid fa-chevron-down"
               :class="{ 'rotate-180': item.isOpen }"
@@ -168,6 +168,12 @@ export default {
 
   .title-1{
     @apply max-w-fit;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .accordion__question {
+    @apply text-left;
   }
 }
 </style>

@@ -87,5 +87,20 @@
 		}
 	}
 
+	@media screen and (max-width: 767px) {
+		.section__title {
+			@apply max-w-full
+		}
+
+		.paragraph,
+		.paragraph:nth-child(1) {
+			@apply w-[90%]
+		}
+
+		.why-to-use__image {
+			@apply w-full
+		}
+	}
+
 
 </style>
