@@ -149,10 +149,6 @@
         @apply absolute top-[50%];
     }
     
-    .companies__arrow img {
-        @apply w-10;
-    }
-
     .companies__arrow--left {
         left: 0;
         transform: translateY(-50%);

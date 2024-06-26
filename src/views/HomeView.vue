@@ -50,7 +50,7 @@
             delay: 200,
           });
 
-          sr.reveal ('.animated-right', {
+          sr.reveal('.animated-right', {
             origin: 'right'
           });
 

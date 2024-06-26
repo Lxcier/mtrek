@@ -124,10 +124,6 @@ export default {
   transform: translateY(-50%);
 }
 
-.glide__arrow img {
-  @apply w-12;
-}
-
 .glide__arrow--left {
   @apply left-0;
 }

@@ -161,10 +161,6 @@
         transform: translateY(-50%);
     }
 
-	.testimonials__glide__arrow img {
-		@apply w-11;
-	}
-
     .testimonials__glide__arrow--left {
         @apply left-0;
     }
