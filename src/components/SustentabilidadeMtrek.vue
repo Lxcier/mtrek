@@ -125,8 +125,12 @@
 	}
 
 	@media screen and (max-width: 767px) {
+		
+    	.section {
+    	    @apply overflow-x-hidden;
+    	}
 		.section__title {
-			@apply max-w-[80%];
+			@apply max-w-[75%];
 		}
 
 		.paragraph {
