@@ -82,7 +82,7 @@
         }
 
         .mobile-slogan {
-            @apply block text-lg;
+            @apply block text-base;
         }
     }
 </style>
