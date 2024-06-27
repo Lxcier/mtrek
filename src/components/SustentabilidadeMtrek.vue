@@ -96,7 +96,7 @@
 
 	@media screen and (max-width: 1023px) {
 		.section__content {
-			@apply flex-col-reverse
+			@apply w-full mx-auto flex-col-reverse;
 		}
 
 		.section__title {
@@ -125,19 +125,20 @@
 	}
 
 	@media screen and (max-width: 767px) {
-		.section {
-			@apply overflow-clip;
-		}
 		.section__title {
-			@apply max-w-[90%];
+			@apply max-w-[80%];
 		}
 
 		.paragraph {
-			@apply w-[80%];
+			@apply w-[70%];
 		}
 
 		.dados {
-			@apply w-[80%] mx-auto;
+			@apply w-[70%] mx-auto;
+		}
+
+		.title-1-big {
+			@apply font-4xl;
 		}
 	}
 </style>
