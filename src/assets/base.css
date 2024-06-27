@@ -90,7 +90,7 @@ html {
 .btn-1, 
 .btn-login, 
 .btn-signin {
-    @apply py-[12px] px-[24px] text-white shadow-sm 
+    @apply p-[12px] text-white shadow-sm 
     hover:bg-transparent hover:text-[var(--purple-primary)]
     transition-all duration-300 ease-in-out cursor-pointer;
     border-radius: 12px;
