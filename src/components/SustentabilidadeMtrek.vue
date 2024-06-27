@@ -138,7 +138,7 @@
 		}
 
 		.title-1-big {
-			@apply font-4xl;
+			@apply text-4xl;
 		}
 	}
 </style>
