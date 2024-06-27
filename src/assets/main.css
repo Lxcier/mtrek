@@ -42,6 +42,19 @@ html {
     visibility: hidden;
 }
 
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    opacity: 1 !important;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--purple-secundary) !important;
+}
+
 @media screen and (max-width: 767px) {
     .container {
         @apply px-2;

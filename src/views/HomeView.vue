@@ -1,7 +1,4 @@
 <script>  
-    import sr from '../scrollReveal.js';
-
-
     import MainSlider from '../components/MainSlider.vue'
     import Beneficios from '../components/Beneficios.vue'
     import Estatisticas from '../components/Estatisticas.vue'
@@ -36,40 +33,6 @@
             FAQ,
             Iframe,
         },
-        mounted() {
-          sr.reveal('.calculadora');
-          sr.reveal('.animated');
-
-          sr.reveal('.section__title', {
-            duration: 600,
-            scale: .8,
-            origin: 'bottom',
-          });
-
-          sr.reveal('.paragraph', {
-            delay: 200,
-          });
-
-          sr.reveal('.animated-right', {
-            origin: 'right'
-          });
-
-          sr.reveal('.animated-left', {
-            origin: 'left'
-          });
-
-
-          // cards
-          sr.reveal('.card', {
-            interval: 200,
-            origin: 'left',
-          });
-
-          sr.reveal('.arrow', {
-            interval: 200,
-            origin: 'left',
-          });
-        }
     }
 </script>
 

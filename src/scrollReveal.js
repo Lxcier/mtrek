@@ -38,5 +38,5 @@ sr.reveal('.arrow', {
   origin: 'left',
 });
 
-
-export default sr; 
+sr.reveal('.calculadora', {
+}) 
