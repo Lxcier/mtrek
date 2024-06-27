@@ -53,7 +53,7 @@
 		@apply w-full mx-auto;
 	}
 	.section__content{
-		@apply flex items-center gap-[80px]
+		@apply flex items-center gap-[80px];
 	}
 
 	.section__title {
@@ -125,12 +125,15 @@
 	}
 
 	@media screen and (max-width: 767px) {
+		.section {
+			@apply overflow-clip;
+		}
 		.section__title {
 			@apply max-w-[90%];
 		}
 
 		.paragraph {
-			@apply w-[80%]
+			@apply w-[80%];
 		}
 
 		.dados {
