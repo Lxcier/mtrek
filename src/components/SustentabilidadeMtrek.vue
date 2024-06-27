@@ -43,7 +43,7 @@
 				src="../assets/images/banner-ebulicao-global-desktop.webp">
 
 			<img class="mobile-banner animated duration-1000" 
-				src="../assets/images/banner-ebulicao-global-mobile.png">
+				src="../assets/images/banner-ebulicao-global-celular.png">
 		</section>
 	</main>
 </template>
