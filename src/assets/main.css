@@ -57,10 +57,10 @@ html {
 
 @media screen and (max-width: 767px) {
     .container {
-        @apply px-2 overflow-x-hidden;
+        @apply px-2 overflow-hidden;
     }
 
     .section {
-        @apply overflow-x-hidden;
+        @apply overflow-hidden;
     }
 }
