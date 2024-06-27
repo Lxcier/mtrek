@@ -40,10 +40,10 @@
 
 		<section class="section__banner">
 			<img class="desktop-banner animated duration-1000" 
-				src="../assets/images/BANNER-DE-EBULIÇÃO-GLOBAL.webp">
+				src="../assets/images/banner-ebulicao-global-desktop.webp">
 
 			<img class="mobile-banner animated duration-1000" 
-				src="../assets/images/BANNER-DE-EBULIÇÃO-GLOBAL-CELULAR.png">
+				src="../assets/images/banner-ebulicao-global-mobile.png">
 		</section>
 	</main>
 </template>
