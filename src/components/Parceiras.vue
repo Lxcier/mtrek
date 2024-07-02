@@ -77,7 +77,7 @@
             new Glide('.companies__glide', {
             type: 'carousel',
             startAt: 0,
-            perView: 3,
+            perView: 4,
             autoplay: 3000,
             animationDuration: 500,
             animationTimingFunc: 'ease',
@@ -124,7 +124,7 @@
                         <img src="../assets/images/Icones/next.png">
                     </button>
                 </div>
-             </div>
+            </div>
         </div>
     </main>
 </template>
@@ -174,13 +174,9 @@
 
     @media screen and (max-width: 767px) {
 		.section__title {
-			@apply max-w-full
+			@apply max-w-full text-left;
 		}
 
-		.paragraph,
-		.paragraph:nth-child(1) {
-			@apply w-[90%]
-		}
 	}
 </style>
 

@@ -47,7 +47,11 @@
 
 	@media screen and (max-width: 767px) {
 		.section__title {
-			@apply max-w-[90%]
+			@apply max-w-full text-left;
+		}
+
+		.title-1 {
+			@apply text-left;
 		}
 	}
 </style>

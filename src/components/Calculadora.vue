@@ -164,7 +164,7 @@ export default {
 
 @media screen and (max-width: 767px){
   .section {
-    @apply flex-col;
+    @apply flex-col w-full;
   }
 
   .section__calculadora {

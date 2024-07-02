@@ -68,7 +68,7 @@
 
 	@media screen and (max-width: 767px) {
 		.section__title {
-			@apply max-w-full;
+			@apply max-w-full text-left;
 		}
 
 		.reasons {

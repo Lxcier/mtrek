@@ -55,7 +55,7 @@
 		}
 
 		.section__title {
-			@apply text-center
+			@apply text-left
 		}
 
 		.paragraph {
@@ -73,12 +73,7 @@
 
 	@media screen and (max-width: 767px) {
 		.section__title {
-			@apply max-w-full
-		}
-
-		.paragraph,
-		.paragraph:nth-child(1) {
-			@apply w-[90%]
+			@apply max-w-full text-left;
 		}
 
 		.graphic {

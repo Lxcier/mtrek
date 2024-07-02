@@ -1,0 +1,16 @@
+/* Mobile (Celular) */
+
+@media screen and (max-width: 767px) {
+    .container {
+        @apply px-0;
+    }
+
+    .section {
+        @apply w-full
+    }
+}
+
+/* Mobile (Tablet) */
+@media screen and (max-width: 1023px) {
+    
+}

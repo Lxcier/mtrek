@@ -57,7 +57,7 @@
 	}
 
 	.section__title {
-		@apply max-w-full text-start
+		@apply max-w-full text-left
 	}
 
 	.section__image {
@@ -100,7 +100,7 @@
 		}
 
 		.section__title {
-			@apply text-center
+			@apply text-left
 		}
 
 		.paragraph {
@@ -129,16 +129,21 @@
     	.section {
     	    @apply overflow-x-hidden;
     	}
-		.section__title {
-			@apply max-w-[75%];
+
+		.section__text {
+			@apply w-full;
 		}
 
-		.paragraph {
-			@apply w-[70%];
+		.section__title {
+			@apply w-fit;
+		}
+
+		.section__image-mobile {
+			@apply w-full;
 		}
 
 		.dados {
-			@apply w-[70%] mx-auto;
+			@apply mx-auto w-full;
 		}
 
 		.title-1-big {

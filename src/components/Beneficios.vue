@@ -90,12 +90,18 @@ export default {
 }
 
 .card__button {
-	@apply flex items-center gap-1 mt-[18px]
+	@apply flex items-center gap-1 mt-[18px] p-1 rounded-lg w-fit transition duration-300 ease-in-out;
+	border: 2px solid transparent;
 }
+
+.card__button:hover {
+		border: 2px solid var(--purple-primary);
+		transform: scale(1.01);
+	}
 
 @media screen and (max-width: 1023px){
 	.section__title {
-		@apply max-w-[72%];
+		@apply max-w-full w-full text-left;
 	}
 
 	.cards__list {
@@ -113,7 +119,7 @@ export default {
 
 @media screen and (max-width: 767px) {
 	.card {
-		@apply max-w-[90%]
+		@apply max-w-full w-full;
 	}
 }
 </style>

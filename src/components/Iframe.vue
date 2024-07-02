@@ -15,13 +15,13 @@
 
     @media screen and (max-width: 1023px) {
         .video {
-            @apply w-[98%] h-[420px];
+            @apply w-full h-auto;
         }
     }
 
     @media screen and (max-width: 767px) {
         .video {
-            @apply h-[320px];
+            @apply h-[280px];
         }
     }
 </style>

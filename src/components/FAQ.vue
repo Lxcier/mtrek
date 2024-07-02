@@ -172,7 +172,14 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
+  .title-1 {
+    @apply mx-0 text-left
+  }
   .accordion__question {
+    @apply text-left;
+  }
+
+  .text-2-normal {
     @apply text-left;
   }
 }

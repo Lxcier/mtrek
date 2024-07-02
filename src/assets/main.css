@@ -1,4 +1,5 @@
 @import './base.css';
+@import './queries.css';
 
 html {
     scroll-behavior: auto;
@@ -53,10 +54,4 @@ html {
 
 .swiper-pagination-bullet-active {
     background-color: var(--purple-secundary) !important;
-}
-
-@media screen and (max-width: 767px) {
-    .container {
-        @apply px-2;
-    }
 }

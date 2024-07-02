@@ -152,19 +152,19 @@ export default {
 
 @media screen and (max-width: 767px) {
   .section__title {
-    @apply max-w-full
+    @apply max-w-full text-left;
   }
 
-  .paragraph {
-    @apply w-[90%];
-  }
-  
   .cards__list {
     @apply flex flex-col;
   }
 
   .card {
-    @apply w-[90%];
+    @apply w-full;
+  }
+
+  .btn-1 {
+    @apply w-fit text-center
   }
 }
 </style>
