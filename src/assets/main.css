@@ -2,7 +2,8 @@
 @import './queries.css';
 
 html {
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .body {

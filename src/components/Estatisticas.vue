@@ -1,20 +1,15 @@
 <template>
-  <main class="section">
+  <main class="section" ref="section">
     <h2 class="section__title title-1">
       Faça a Mudança, Faça a Diferença!
     </h2>
-    <p
-      class="paragraph text-1">
-      Ao optar pela energia limpa da Mtrek, você não está apenas economizando
-      dinheiro; você está ajudando a construir um futuro mais sustentável para
-      todos. Cada escolha que você faz contribui para a redução da poluição e
-      para a preservação do meio ambiente.
+    <p class="paragraph text-1">
+      Ao optar pela energia limpa da Mtrek, você não está apenas economizando dinheiro; você está ajudando a construir um futuro mais sustentável para todos. Cada escolha que você faz contribui para a redução da poluição e para a preservação do meio ambiente.
     </p>
 
     <section class="section__content" ref="sectionContent">
       <ul class="cards__list">
-        <li
-          class="card w-[410px]">
+        <li class="card w-[410px]">
           <p class="text-4">
             Economize todos os meses na sua conta de luz em até:
           </p>
@@ -22,18 +17,15 @@
           <p class="subtitle-1">Desconto mensal na conta de luz</p>
         </li>
 
-        <li
-          class="card w-[513px]">
+        <li class="card w-[513px]">
           <p class="text-4">
-            Em meses de bandeira tarifária vermelha II seu desconto pode chegar
-            em até:
+            Em meses de bandeira tarifária vermelha II seu desconto pode chegar em até:
           </p>
           <span class="span-1">{{ animatedNumber2 }}%</span>
           <p class="subtitle-1">Proteção contra bandeira tarifária</p>
         </li>
 
-        <li
-          class="card w-[378px]">
+        <li class="card w-[378px]">
           <p class="text-4">
             Você contribui positivamente com o meio ambiente
           </p>
@@ -41,8 +33,7 @@
           <p class="subtitle-1">Poluição que você reduzirá</p>
         </li>
 
-        <li
-          class="card w-[378px]">
+        <li class="card w-[378px]">
           <p class="text-4">
             Consumir energia da Mtrek, é o equivalente a plantar
           </p>
@@ -51,9 +42,7 @@
         </li>
       </ul>
 
-      <a
-        class="btn-1 animated"
-        href="#">
+      <a class="btn-1 animated" href="#">
         Quero Economizar e Salvar o Planeta
       </a>
     </section>
@@ -69,18 +58,28 @@ export default {
       animatedNumber2: 0,
       animatedNumber3: 0,
       animatedNumber4: 0,
-      animationDone: false, // Flag para indicar se a animação já foi concluída
+      animationDone: false,
     };
   },
   mounted() {
-    if (!this.animationDone) { // Verifica se a animação já foi feita
-      this.animateNumbers();
-    }
+    // Inicia a observação quando o componente é montado
+    const observer = new IntersectionObserver(this.handleIntersection, {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5, // Define o limite de visibilidade para 50%
+    });
+    observer.observe(this.$refs.section); // Observa o elemento principal do componente
   },
   methods: {
+    handleIntersection(entries) {
+      // Verifica se o elemento está visível na viewport
+      if (entries[0].isIntersecting && !this.animationDone) {
+        this.animateNumbers();
+      }
+    },
     animateNumbers() {
-      const targets = [25, 30, 140, 6]; 
-      const durations = [1000, 1200, 1500, 1500]; 
+      const targets = [25, 30, 140, 6];
+      const durations = [1800, 2000, 2100, 1850];
 
       targets.forEach((target, index) => {
         let startTimestamp = null;
@@ -93,8 +92,7 @@ export default {
           if (progress < 1) {
             requestAnimationFrame(step);
           } else {
-            // Define a flag como true quando a animação terminar
-            this.animationDone = true; 
+            this.animationDone = true; // Define a flag como true quando a animação terminar
           }
         };
 
@@ -126,11 +124,11 @@ export default {
 
 @media screen and (max-width: 1023px) {
   .section__title {
-    @apply max-w-[73%]
+    @apply max-w-[73%];
   }
 
   .paragraph {
-    @apply w-full text-justify
+    @apply w-full text-justify;
   }
 
   .cards__list {
@@ -142,7 +140,7 @@ export default {
   }
 
   .btn-1 {
-    @apply text-[18px]
+    @apply text-[18px];
   }
 
   .span-1 {
@@ -164,7 +162,7 @@ export default {
   }
 
   .btn-1 {
-    @apply w-fit text-center
+    @apply w-fit text-center;
   }
 }
 </style>

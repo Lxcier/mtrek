@@ -3,7 +3,7 @@ import ScrollReveal from 'scrollreveal';
 document.addEventListener('DOMContentLoaded', function () {
   window.sr = ScrollReveal({
     duration: 600, // Duração da animação em milissegundos
-    delay: 100, // Atraso inicial em milissegundos
+    delay: 200, // Atraso inicial em milissegundos
     distance: '40px',
   });
   
@@ -40,6 +40,10 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   
   sr.reveal('.calculadora', {
+  })
+
+  sr.reveal('.swiper-container', {
+    delay: 0
   })
 
 }) 

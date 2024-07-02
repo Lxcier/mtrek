@@ -12,6 +12,8 @@ app.use(router)
 
 app.mount('#app');
 
+document.addEventListener('')
+
 const accordionBtns = document.querySelectorAll('.accordion');
 
 accordionBtns.forEach(accordion => {
@@ -26,5 +28,3 @@ accordionBtns.forEach(accordion => {
     }
   });
 });
-
-// Animações 
