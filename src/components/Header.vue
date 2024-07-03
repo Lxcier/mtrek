@@ -114,6 +114,10 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
+    .container {
+        @apply py-2;
+    }
+
     .desktop-slogan {
         @apply hidden;
     }
