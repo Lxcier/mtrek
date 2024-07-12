@@ -62,7 +62,7 @@ export default {
     };
   },
   mounted() {
-    // Polyfill para IntersectionObserver (adicione no seu projeto se necessário)
+    // Polyfill para IntersectionObserver
     if (!('IntersectionObserver' in window)) {
       import('intersection-observer').then(() => {
         this.initObserver();
@@ -77,7 +77,7 @@ export default {
       const observer = new IntersectionObserver(this.handleIntersection, {
         root: null,
         rootMargin: "0px",
-        threshold: 0.1, // Ajuste do threshold para melhorar a detecção
+        threshold: 0.1,
       });
       observer.observe(this.$refs.section); // Observa o elemento principal do componente
     },

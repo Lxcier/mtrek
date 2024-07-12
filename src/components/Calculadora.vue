@@ -70,10 +70,10 @@ export default {
       const newValue = Math.round((percentage * this.maxRange) / this.step) * this.step;
     },
     incrementar() {
-      this.gastoMensal = Math.min(this.gastoMensal + 200, this.maxRange);
+      this.gastoMensal = Math.min(this.gastoMensal + 50, this.maxRange);
     },
     decrementar() {
-      this.gastoMensal = Math.max(this.gastoMensal - 200, 0);
+      this.gastoMensal = Math.max(this.gastoMensal - 50, 0);
     },
   },
 };
