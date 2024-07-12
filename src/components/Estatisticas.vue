@@ -62,17 +62,26 @@ export default {
     };
   },
   mounted() {
-    // Inicia a observação quando o componente é montado
-    const observer = new IntersectionObserver(this.handleIntersection, {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.5, // Define o limite de visibilidade para 50%
-    });
-    observer.observe(this.$refs.section); // Observa o elemento principal do componente
+    // Polyfill para IntersectionObserver (adicione no seu projeto se necessário)
+    if (!('IntersectionObserver' in window)) {
+      import('intersection-observer').then(() => {
+        this.initObserver();
+      });
+    } else {
+      this.initObserver();
+    }
   },
   methods: {
+    initObserver() {
+      // Inicia a observação quando o componente é montado
+      const observer = new IntersectionObserver(this.handleIntersection, {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1, // Ajuste do threshold para melhorar a detecção
+      });
+      observer.observe(this.$refs.section); // Observa o elemento principal do componente
+    },
     handleIntersection(entries) {
-      // Verifica se o elemento está visível na viewport
       if (entries[0].isIntersecting && !this.animationDone) {
         this.animateNumbers();
       }

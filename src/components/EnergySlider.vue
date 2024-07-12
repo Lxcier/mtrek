@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <v-app>
     <v-main>
       <v-container>
@@ -53,4 +53,4 @@ export default {
     },
   },
 };
-</script>
+</script> -->

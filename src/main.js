@@ -1,7 +1,7 @@
 import './assets/main.css'
 import '../node_modules/@glidejs/glide/dist/css/glide.core.min.css'
 
-
+import 'intersection-observer';
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'

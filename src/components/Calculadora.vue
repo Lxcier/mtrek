@@ -3,29 +3,34 @@
     <div class="section__calculadora">
       <h2 class="title-1-white mb-1">Calcule Sua Economia!</h2>
       <p class="text-4">Quanto você gasta de luz, em média, por mês?</p>
-      <div class="range-container" @click="handleRangeClick">
-        <input
-          type="range"
-          min="0"
-          class="range__background"
-        >
-
-        <span class="range-progress" :style="{ width: `calc(${progresso}% + 12px)` }"></span>
-
-        <input
-          type="range"
-          min="0"
-          :max="maxRange"
-          :step="step"
-          class="range"
-          v-model.number="gastoMensal"
-        >
+      <div class="flex items-center mt-4">
+        <button class="reduzir" @click="decrementar">
+          <img class="w-8" src="../assets/images/icones/menos.png">
+        </button>
+        <div class="range-container" @click="handleRangeClick">
+          <input
+            type="range"
+            min="0"
+            class="range__background"
+          >
+          <span class="range-progress" :style="{ width: `calc(${progresso}% + 12px)` }"></span>
+          <input
+            type="range"
+            min="0"
+            :max="maxRange"
+            :step="step"
+            class="range"
+            v-model.number="gastoMensal"
+          >
+        </div>
+        <button class="aumentar" @click="incrementar">
+          <img class="w-8" src="../assets/images/icones/mais.png">
+        </button>
       </div>
       <span class="gasto">
         R$ {{ gastoMensal.toFixed(2) }}
       </span>
     </div>
-
     <div class="section__resultado">
       <div class="resultado">
         <p class="text-sm">Em 12 meses você poderá economizar até:</p>
@@ -63,9 +68,16 @@ export default {
       const clickPosition = event.clientX - left;
       const percentage = clickPosition / width;
       const newValue = Math.round((percentage * this.maxRange) / this.step) * this.step;
+      this.gastoMensal = newValue;
     },
-  }
-  };
+    incrementar() {
+      this.gastoMensal = Math.min(this.gastoMensal + 200, this.maxRange);
+    },
+    decrementar() {
+      this.gastoMensal = Math.max(this.gastoMensal - 200, 0);
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -80,7 +92,7 @@ export default {
 }
 
 .range-container {
-  @apply mt-4 relative cursor-pointer;
+  @apply mx-auto h-[15px] w-[83%] relative cursor-pointer;
 }
 
 .range__background {
