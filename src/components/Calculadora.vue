@@ -68,7 +68,6 @@ export default {
       const clickPosition = event.clientX - left;
       const percentage = clickPosition / width;
       const newValue = Math.round((percentage * this.maxRange) / this.step) * this.step;
-      this.gastoMensal = newValue;
     },
     incrementar() {
       this.gastoMensal = Math.min(this.gastoMensal + 200, this.maxRange);
