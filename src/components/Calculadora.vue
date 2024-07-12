@@ -5,7 +5,7 @@
       <p class="text-4">Quanto você gasta de luz, em média, por mês?</p>
       <div class="flex items-center mt-4">
         <button class="reduzir" @click="decrementar">
-          <img class="w-8" src="../assets/images/icones/menos.png">
+          <img class="w-8" src="../assets/images/Icones/menos.png">
         </button>
         <div class="range-container" @click="handleRangeClick">
           <input
@@ -24,7 +24,7 @@
           >
         </div>
         <button class="aumentar" @click="incrementar">
-          <img class="w-8" src="../assets/images/icones/mais.png">
+          <img class="w-8" src="../assets/images/Icones/mais.png">
         </button>
       </div>
       <span class="gasto">
