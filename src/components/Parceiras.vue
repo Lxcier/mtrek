@@ -2,16 +2,16 @@
     import Glide from '@glidejs/glide'
 
     // Imagens 
-    import Imagem1 from '../assets/images/Distribuidoras/cemig-minas-gerais.png'
-    import Imagem2 from '../assets/images/Distribuidoras/coelba-bahia.png'
-    import Imagem3 from '../assets/images/Distribuidoras/cpfl-piratinga-sao-paulo.png'
-    import Imagem4 from '../assets/images/Distribuidoras/celp-pernambuco.png'
-    import Imagem5 from '../assets/images/Distribuidoras/cosern-rio-grande-do-norte.png'
-    import Imagem6 from '../assets/images/Distribuidoras/enel-ceara.png'
-    import Imagem7 from '../assets/images/Distribuidoras/energisa-mato-grosso.png'
-    import Imagem8 from '../assets/images/Distribuidoras/light-rio-de-janeiro.png'
-    import Imagem9 from '../assets/images/Distribuidoras/neoenergia-elektro.png'
-    import Imagem10 from '../assets/images/Distribuidoras/equatorial-alagoas.png'
+    import Imagem1 from '../assets/images/Distribuidoras/cemig-minas-gerais.webp'
+    import Imagem2 from '../assets/images/Distribuidoras/coelba-bahia.webp'
+    import Imagem3 from '../assets/images/Distribuidoras/cpfl-piratinga-sao-paulo.webp'
+    import Imagem4 from '../assets/images/Distribuidoras/celp-pernambuco.webp'
+    import Imagem5 from '../assets/images/Distribuidoras/cosern-rio-grande-do-norte.webp'
+    import Imagem6 from '../assets/images/Distribuidoras/enel-ceara.webp'
+    import Imagem7 from '../assets/images/Distribuidoras/energisa-mato-grosso.webp'
+    import Imagem8 from '../assets/images/Distribuidoras/light-rio-de-janeiro.webp'
+    import Imagem9 from '../assets/images/Distribuidoras/neoenergia-elektro.webp'
+    import Imagem10 from '../assets/images/Distribuidoras/equatorial-alagoas.webp'
 
     export default {
         name: "Parcerias",

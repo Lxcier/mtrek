@@ -1,7 +1,7 @@
 <template>
     <footer class="footer">
         <div class="container">
-            <img class="footer__logo" src="../assets/images/Logos/logo-cashback.png">
+            <img class="footer__logo" src="../assets/images/Logos/logo-cashback.webp">
    
         <div class="footer__middle text-center">
             <small class="text-4-small copy-desktop">Copyright 2024 &copy; Mtrek - Todos os Direitos Reservados</small>
@@ -10,7 +10,7 @@
             </p>
         </div>
 
-        <div class="footer__right text-center">
+        <div class="footer__right w-fit mx-auto text-center">
             <ul class="footer__social">
                 <li>
                     <a class="social-item" href="">
@@ -119,7 +119,7 @@
         }
 
         .footer__right {
-            @apply flex-row my-4;
+            @apply flex-row my-4 justify-center;
         }
 
         .footer__right .pj {

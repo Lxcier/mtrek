@@ -7,13 +7,13 @@
 <template>
 	<main class="section mx-auto">
 		<section class="section__content container">
-			<img class="section__image animated-left" src="../assets/images/sustentabilidade-mtrek.png">
+			<img class="section__image animated-left" src="../assets/images/sustentabilidade-mtrek.webp">
 			<div class="section__text">
 				<h2 class="section__title title-1">
 					A Mtrek acredita em um mundo sustentável, onde toda energia é renovável e inteligente
 				</h2>
 
-				<img class="section__image-mobile animated" src="../assets/images/sustentabilidade-mtrek.png">
+				<img class="section__image-mobile animated" src="../assets/images/sustentabilidade-mtrek.webp">
 
 				<p class="paragraph text-1">
 					Para fazer nossa parte, temos a missão de tornar energia renovável acessível. A Mtrek endereça esse desafio viabilizando a oferta de energia para residências, simplificando a experiência do cliente e entregando uma solução confiável, inovadora, econômica e <span class="font-black">RENDA EXTRA</span>.
@@ -43,7 +43,7 @@
 				src="../assets/images/banner-ebulicao-global-desktop.webp">
 
 			<img class="mobile-banner animated duration-1000" 
-				src="../assets/images/banner-ebulicao-global-celular.png">
+				src="../assets/images/banner-ebulicao-global-celular.webp">
 		</section>
 	</main>
 </template>

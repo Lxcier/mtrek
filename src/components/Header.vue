@@ -3,7 +3,7 @@
             :class="{ 'header-hidden': isHeaderHidden, 'header-transparent': !isHeaderTransparent }">
         <div class="container">
             <a href="/" class="logo">
-                <img src="../assets/images/Logos/LOGO-MERCADO-DE-ENERGIA- H. PRETO.png" id="logo">
+                <img src="../assets/images/Logos/logo-preto.webp" id="logo">
             </a>
     
             <h3 id="slogan" class="text-1 desktop-slogan">Consumo Inteligente, Futuro Sustentável!</h3>
@@ -14,7 +14,7 @@
             </nav>
         </div>
     </header>
-    <div class="container">
+    <div class="w-fit mx-auto">
         <h3 class="text-1 mobile-slogan">Consumo Inteligente, Futuro Sustentável!</h3>
     </div>
 </template>

@@ -20,7 +20,7 @@
 			</article>
 
 			<article class="graphic">
-				<img class="animated-left" src="../assets/images/grafico.png">
+				<img class="animated-left" src="../assets/images/grafico.webp">
 
 				<a class="btn-1 mobile-btn block w-fit animated">Quero Economizar</a>
 			</article>

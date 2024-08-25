@@ -13,7 +13,7 @@
 
 			<ul class="cards__list">
 				<li class="card">
-					<img class="card__image" src="../assets/images/Distribuidoras.png">
+					<img class="card__image" src="../assets/images/Distribuidoras.webp">
 
 					<h3 class="card__title title-3">
 						Parceria com Geradores de Energia Renovável
@@ -25,7 +25,7 @@
 				</li>
 
 				<li class="card">
-					<img class="card__image" src="../assets/images/creditos-em-energia-limpa.png">
+					<img class="card__image" src="../assets/images/creditos-em-energia-limpa.webp">
 
 					<h3 class="card__title title-3">
 						Parceria com Geradores de Energia Renovável
@@ -37,7 +37,7 @@
 				</li>
 
 				<li class="card">
-					<img class="card__image" src="../assets/images/economia-na-conta.png">
+					<img class="card__image" src="../assets/images/economia-na-conta.webp">
 
 					<h3 class="card__title title-3">
 						Economia na conta
@@ -49,7 +49,7 @@
 				</li>
 
 				<li class="card">
-					<img class="card__image" src="../assets/images/cobrança-simples-e-digital.png">
+					<img class="card__image" src="../assets/images/cobrança-simples-e-digital.webp">
 
 					<h3 class="card__title title-3">
 						Cobrança Simples e Digital

@@ -8,7 +8,7 @@
 	<main class="section">
 		<section class="section__content">
 			<article class="why-to-use">
-				<img class="why-to-use__image animated-left" src="../assets/images/Planeta.png">
+				<img class="why-to-use__image animated-left" src="../assets/images/Planeta.webp">
 				<div class="text">
 					<h2 class="section__title title-1 mb-[56px]">
 						Transforme sua Energia em Sustentabilidade com a Mtrek
@@ -27,7 +27,7 @@
 					</p>
 				</div>
 
-				<img class="why-to-use__image animated-right" src="../assets/images/Sustentabilidade.png">
+				<img class="why-to-use__image animated-right" src="../assets/images/Sustentabilidade.webp">
 			</article>
 
 			<a 	class="btn-1 animated" href="#">Fazer Cadastro</a>
